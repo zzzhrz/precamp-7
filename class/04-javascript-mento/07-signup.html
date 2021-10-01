@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>이벤트 감지</title>
+    <script>
+        function checkValidation() {
+            const email = document.getElementById("email").value
+            // input text 가져오려면 .innerText 여기는 input type이라서 값을 가져옴 .value
+            const password = document.getElementById("password1").value
+            const password2 = document.getElementById("password2").value
+
+            if(email !== "" && password1 !== "" && password2 !== "") {
+                document.getElementById("mybutton").setAttribute("style", "background-color: yellow;")
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="email" placeholder="이메일을 입력해 주세요." onchange="checkValidation()" onkeyup="onchange" /><br /> 
+    <!-- inline요소라서 br로 줄 내려줌  -->
+    <!-- 값을 입력했을 때 변경되어야 하기 때문에 onchange 씀 / 그리고 아이디부터 일지 패스워드 넣을지는 순서 모르기 때문에 다 써줌-->
+    <!-- onkeyup > 입력하는 순간 onchange로 바뀌게끔 -->
+    <input type="password" id="password1" placeholder="비밀번호를 입력해 주세요." onchange="checkValidation()" onkeyup="onchange"/><br /> 
+    <input type="password" id="password2" placeholder="비밀번호를 확인해 주세요." onchange="checkValidation()" onkeyup="onchange"/><br /> 
+    
+    <button id="mybutton">회원가입</button>
+</body>
+
+</html>

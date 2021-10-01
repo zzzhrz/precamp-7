@@ -1,0 +1,21 @@
+*{
+    margin: 0px; 
+    /* 바깥여백 0으로 */
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* 똑같은 코드니까 , 붙여서 쓰기 */
+
+.wrapper {
+    width: 100%;
+    /* wrapper의 부모인 body의 100%라는 의미 */
+    height: 100%;
+    background-color: red;
+}
+
+/* free video 검색해서 다운 후 링크 걸기 / 폴더 저장 후 링크 */

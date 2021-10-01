@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>인증번호 전송</title>
+        <script>
+        const getToken = () => {
+  
+            const token = String(Math.floor(Math.random()*100000)).padStart(6,"0")
+             document.getElementById("token").innerText = token
+            }
+                        
+            let timer = 180
+            setInterval(function(){
+		    timer = timer - 1;
+		    const minutes = Math.floor(timer / 60)
+		    const seconds = timer - minutes * 60
+		    console.log(minutes + ":" + seconds)
+            }, 1000)
+
+    </script>
+
+
+</head>
+<body>
+
+    <span id="token">000000     </span>S
+    <button onclick="getToken()">인증번호 전송</button> 
+
+    <div>
+    <button onclick="aaa()">인증완료</button>
+    </div>
+
+</body>
+</html>

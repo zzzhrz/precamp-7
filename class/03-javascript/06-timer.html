@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>인증번호 전송</title>
+        <script>
+
+        let mySwitch = false 
+        const getToken = () => {
+            mySwitch = true
+            // 1.인증번호 생성해서 화면에 보여주기
+            const token = String(Math.floor(Math.random()*100000)).padStart(6,"0")
+             document.getElementById("token").innerText = token
+            
+            
+            // 2. 시간 초 타이머 생성해서 화면에 보여주기
+            
+            let timer = 180
+            setInterval(() => {
+		     if(time >= 0) {
+                const minutes = Math.floor(timer / 60)
+		        const seconds = String(time % 60).padStart(2, "0")
+
+    	         document.getElementById("timer").innerText = minutes + ":" + seconds
+                 if(time === 0) document.getElementById("mybutton").setAttribute("disabled", "true")
+                time = time -1
+             }
+            }, 1000)
+        }
+    </script>
+
+
+</head>
+<body>
+
+    <span id="token">000000     </span>
+    <button onclick="getToken()">인증번호 전송</button> 
+
+    <br/>
+    <span id="timer">3:00</span>
+    <button id="mybutton">인증완료</button>
+
+</body>
+</html>

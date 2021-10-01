@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   
+    <title>휴대폰 포커스 연습</title>
+    <script>
+
+    //    const classmates = ["철수"], ["영희"]
+    //    classmates[0] = 철수
+    //    classmates.length = 2 
+
+
+        function changephone1() {
+            const phone1 = document.getElementById("phone1").value
+                if(phone1.length === 3) {
+                    document.getElementById("phone2").focus()
+                }
+        }
+
+        function changephone2() {
+            const phone2 = document.getElementById("phone2").value
+                if(phone2.length === 4) {
+                    document.getElementById("phone3").focus()
+                }
+        }
+
+    </script>
+</head>
+<body>
+    <input id="phone1" type="text" size="3" maxlength="3" onchange="changephone1()" onkeyup="onchange()"/>-
+    <!-- 역시 여기도 마우스 떼야 옆칸으로 움직여서 onkeyup줘서 onchange 되게끔 -->
+    <input id="phone2" type="text" size="4" maxlength="4"onchange="changephone2()" onkeyup="onchange()"/>-
+    <input id="phone3" type="text" size="4" maxlength="4"/>
+    <!-- maxlength줘서 4자리 숫자까지만 입력되게끔 -->
+</body>
+</html>

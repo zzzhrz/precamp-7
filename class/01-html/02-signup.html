@@ -1,50 +1,26 @@
 <html>
     <head>
-        <!-- <link href="02-signup.css" rel="stylesheet" /> -->
+       <link href="02-signup.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- 여기는 회원가입 코드입니다 -->
-        <div style="width: 330px; border: 1px solid gray; border-radius: 5px;" >
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
-                <h3>회원가입</h3>
-                <input type="text" placeholder="이메일을 입력해 주세요." style="width: 300px; height: 40px; padding-left: 10px; border-radius: 5px; border: 1px solid gray;" /><br />
-                <input type="text" placeholder="이름을 입력해 주세요." style="width: 300px; height: 40px; padding-left: 10px; border-radius: 5px; border: 1px solid gray;"/><br />
-                <input type="password" placeholder="비밀번호를 입력해 주세요." style="width: 300px; height: 40px; padding-left: 10px; border-radius: 5px; border: 1px solid gray;"/><br />
-                <input type="password" placeholder="비밀번호를 다시 입력해 주세요." style="width: 300px; height: 40px; padding-left: 10px; border-radius: 5px; border: 1px solid gray;"/><br />
-            </div>
-            <input type="text" size="3" style="width: 60px; height: 40px; margin-left: 15px; margin-right: 13px; border-radius: 5px; border: 1px solid gray;"/>-
-            <input type="text" size="4" style="width: 80px; height: 40px; margin-left: 13px; margin-right: 13px; border-radius: 5px; border: 1px solid gray;"/>-
-            <input type="text" size="4" style="width: 80px; height: 40px; margin-left: 13px; margin-right: 15px; border-radius: 5px; border: 1px solid gray;"/><br />
-            <br />
-            <span style="margin-left: 15px;">000000</span>&nbsp;&nbsp;&nbsp;&nbsp;<button style="width: 220px; height: 40px; ">인증번호전송</button><br />
-            <br />
-            <span style="margin-left: 15px;">&nbsp;&nbsp;3:00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><button style="width: 220px; height: 40px;">인증확인</button><br /><br />
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <select style="width: 300px; height: 40px;">
-                    <option disabled selected>지역을 선택하세요.</option>
-                    <option>서울</option>
-                    <option>경기</option>
-                    <option>인천</option>
-                </select>
-            </div>
-            <br />
-            <!-- 여기는 버튼입력 코드입니다. -->
-            <div style="display: flex; justify-content: center;">
-                <div>
-                    <input type="radio" name="aaa" /> <span style="margin-right: 10px;">여성</span>
-                </div>
-                <div>
-                    <input type="radio" name="aaa" /> <span style="padding-left: 10px;">남성</span>
-                </div>
-            </div><br />
-            <div style="margin-left: 10px; margin-right: 10px;">
-                <input type="checkbox" />이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.
-            </div><br />
-            <hr />
-            <br />
-            <button style="width: 300px; height: 40px; margin-left: 15px; margin-bottom: 20px;">가입하기</button>
-            <br />
-            </div>
-        </div>
+        <!-- 아래는 회원가입 입력폼입니다. -->
+        <h1 style="color: blue"; >회원가입</h1>
+        <input type="text" placeholder="이메일을 입력해 주세요."/><br /><br />
+        <input type="text" placeholder="이름을 입력해 주세요."/><br /><br />
+        <input class="aaa" type="password" placeholder="비밀번호를 입력해 주세요."/><br /><br />
+        <input id="qqq" class="aaa" type="password" placeholder="비밀번호를 다시 입력해 주세요."/><br /><br />
+        <select>
+            <option disabled selected>지역을 선택하세요.</option>
+            <option>서울</option>
+            <option>경기</option>
+            <option>인천</option>
+        </select><br /><br />
+        <input type="radio" name="aaa" />여성<input type="radio" name="aaa" />남성<br  /><br />
+        <input type="checkbox" />이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.
+        <hr />
+        <button>
+            <h1>가입하기</h1>
+        </button>
+        <!-- <input type="button" value="가입하기"> -->
     </body>
 </html>

@@ -103,6 +103,7 @@
 	justify-content: space-between;
 	padding-left: 10px;
 	z-index: 1;
+	/* wrapper__right가 네비게이션보다 위로 튀어나오게끔 z-index 값 준 것 */
 }
 
 .wrapper__right__header {
@@ -151,7 +152,7 @@
 
 .kkk {
 	color: red;
-	font-size: 50px;
+	font-size: 100px;
 }
 
 iframe {
@@ -166,8 +167,9 @@ iframe {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
+	/* 메뉴 간격 주려고 스페이스 비트윈 */
 	position: absolute;
+	/* 절대 좌표로 움직이게 포지션 앱솔루트 */
 	left: 784px;
 	top: 110px;
 }
@@ -176,11 +178,14 @@ iframe {
 	width: 60px;
 	height: 30px;
 	line-height: 30px;
+	/* 글자 가운데로 오기 위해서 위에 높이랑 같이 라인하잍도 30으로 */
+	text-align: center;
 	color: white;
 	background-color: #298EB5;
 	border: 1px solid black;
 	border-radius: 0px 10px 10px 0px;
-	text-align: center;
+	/* 시계방향으로 좌위/우상/우하/좌하 */
 	font-size: 10px;
 	cursor: pointer;
+	/* 메뉴에 커서 올려서 손가락 모양으로 나오게끔 */
 }

@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>DOM조작하기</title>
-    <script>
-        function aaa(){
-            document.getElementById("zzz").innerText = "반갑습니다."
+  
+    <title>돔(Document) 조작하기 (HTML과 JAVASCRIPT의 연결)</title>
+
+    <script> 
+    // 기능 연결하려면 script 넣어야함
+        
+        function  aaa() {
+        // 기능 넣기 위한 펑션, 기능 작성하기, 밑에서 클릭하면 여기 실행
+        // alert("하이~~~")
+            document.getElementById("bbb").innerText = "반갑습니다"
+            // bbb라는 아이디를 가져와주세요.안에 텍스트 있으니까 innerText > 그리고 반갑습니다로 바꿔주세요
         }
 
-        function counter(){
-            const temp = Number(document.getElementById("count").innerText) + 1
-            document.getElementById("count").innerText = temp
-        }
     </script>
+
 </head>
 <body>
-    <div id="zzz">안녕하세요</div>
-    <button onclick="aaa()">버튼클릭!!!</button>
+    <div id="bbb">안녕하세요</div> 
+        <!-- id를 주고 -->
+    <button onclick="aaa()">클릭하기!!</button>
+                    <!-- aaa() 괄호까지 세트임/ 클릭하기 버튼 누르면 aaa()출력 -->
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  
+    <title>돔(Document) 조작하기 (HTML과 JAVASCRIPT의 연결)</title>
+
+    <script> 
+    // 기능 연결하려면 script 넣어야함
+              }       
+
+    </script>
+
+</head>
+<body>
+    <div id="bbb">안녕하세요</div> 
+    <button onclick="aaa()">클릭하기!!</button>
+                   
 
     <div id="count">0</div>
-    <button onclick="counter()">카운트 증가!!!</button>
+    <button onclick="counter()">숫자 올리기!!</button>
+
 </body>
 </html>
